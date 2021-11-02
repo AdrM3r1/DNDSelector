@@ -46,11 +46,11 @@ public interface classSelected {
 
     static void barbarian() throws InterruptedException {
         TimeUnit.SECONDS.sleep(1);
-        System.out.println();
+        System.out.println("Attack with rage");
         TimeUnit.SECONDS.sleep(1);
-        System.out.println();
+        System.out.println("good armor and good weapons");
         TimeUnit.SECONDS.sleep(1);
-        System.out.println();
+        System.out.println("Let the enemy fear you");
         choose.acceptCancel();
     }
 
