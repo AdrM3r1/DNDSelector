@@ -3,7 +3,7 @@ package random_PJ_DND;
 import java.util.concurrent.TimeUnit;
 
 public interface classSelected {
-	
+
     static void paladin() throws InterruptedException {
         TimeUnit.SECONDS.sleep(1);
         System.out.println("Sacred warrior with an oath");
@@ -86,12 +86,12 @@ public interface classSelected {
 
     static void rogue() throws InterruptedException {
         TimeUnit.SECONDS.sleep(1);
-        System.out.println();
+        System.out.println("Finesse weapons and a short bow");
         TimeUnit.SECONDS.sleep(1);
-        System.out.println();
+        System.out.println("quick attacks and dodge incoming attacks");
         TimeUnit.SECONDS.sleep(1);
-        System.out.println();
+        System.out.println("receive minor damages at the cost of your armor class");
         choose.acceptCancel();
     }
-    
+
 }
