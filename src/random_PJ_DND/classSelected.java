@@ -56,11 +56,11 @@ public interface classSelected {
 
     static void bard() throws InterruptedException {
         TimeUnit.SECONDS.sleep(1);
-        System.out.println();
+        System.out.println("Music to our ears, pain for your foes");
         TimeUnit.SECONDS.sleep(1);
-        System.out.println();
+        System.out.println("give buffs and attack");
         TimeUnit.SECONDS.sleep(1);
-        System.out.println();
+        System.out.println("occasionally played by horny people");
         choose.acceptCancel();
     }
 
