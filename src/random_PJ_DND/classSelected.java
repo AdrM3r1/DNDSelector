@@ -3,7 +3,7 @@ package random_PJ_DND;
 import java.util.concurrent.TimeUnit;
 
 public interface classSelected {
-	
+
     static void paladin() throws InterruptedException {
         TimeUnit.SECONDS.sleep(1);
         System.out.println("Sacred warrior with an oath");
@@ -26,72 +26,72 @@ public interface classSelected {
 
     static void artificier() throws InterruptedException {
         TimeUnit.SECONDS.sleep(1);
-        System.out.println();
+        System.out.println("");
         TimeUnit.SECONDS.sleep(1);
-        System.out.println();
+        System.out.println("");
         TimeUnit.SECONDS.sleep(1);
-        System.out.println();
+        System.out.println("");
         choose.acceptCancel();
     }
 
     static void sorcerer() throws InterruptedException {
         TimeUnit.SECONDS.sleep(1);
-        System.out.println();
+        System.out.println("");
         TimeUnit.SECONDS.sleep(1);
-        System.out.println();
+        System.out.println("");
         TimeUnit.SECONDS.sleep(1);
-        System.out.println();
+        System.out.println("");
         choose.acceptCancel();
     }
 
     static void barbarian() throws InterruptedException {
         TimeUnit.SECONDS.sleep(1);
-        System.out.println();
+        System.out.println("");
         TimeUnit.SECONDS.sleep(1);
-        System.out.println();
+        System.out.println("");
         TimeUnit.SECONDS.sleep(1);
-        System.out.println();
+        System.out.println("");
         choose.acceptCancel();
     }
 
     static void bard() throws InterruptedException {
         TimeUnit.SECONDS.sleep(1);
-        System.out.println();
+        System.out.println("");
         TimeUnit.SECONDS.sleep(1);
-        System.out.println();
+        System.out.println("");
         TimeUnit.SECONDS.sleep(1);
-        System.out.println();
+        System.out.println("");
         choose.acceptCancel();
     }
 
     static void monk() throws InterruptedException {
         TimeUnit.SECONDS.sleep(1);
-        System.out.println();
+        System.out.println("");
         TimeUnit.SECONDS.sleep(1);
-        System.out.println();
+        System.out.println("");
         TimeUnit.SECONDS.sleep(1);
-        System.out.println();
+        System.out.println("");
         choose.acceptCancel();
     }
 
     static void cleric() throws InterruptedException {
         TimeUnit.SECONDS.sleep(1);
-        System.out.println();
+        System.out.println("");
         TimeUnit.SECONDS.sleep(1);
-        System.out.println();
+        System.out.println("");
         TimeUnit.SECONDS.sleep(1);
-        System.out.println();
+        System.out.println("");
         choose.acceptCancel();
     }
 
     static void rogue() throws InterruptedException {
         TimeUnit.SECONDS.sleep(1);
-        System.out.println();
+        System.out.println("");
         TimeUnit.SECONDS.sleep(1);
-        System.out.println();
+        System.out.println("");
         TimeUnit.SECONDS.sleep(1);
-        System.out.println();
+        System.out.println("");
         choose.acceptCancel();
     }
-    
+
 }
