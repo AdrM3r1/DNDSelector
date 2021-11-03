@@ -66,11 +66,11 @@ public interface classSelected {
 
     static void monk() throws InterruptedException {
         TimeUnit.SECONDS.sleep(1);
-        System.out.println();
+        System.out.println("Peace and tranquility");
         TimeUnit.SECONDS.sleep(1);
-        System.out.println();
+        System.out.println("hit with long weapons as a quarterstaff");
         TimeUnit.SECONDS.sleep(1);
-        System.out.println();
+        System.out.println("give to the enemy the way of the fist");
         choose.acceptCancel();
     }
 
