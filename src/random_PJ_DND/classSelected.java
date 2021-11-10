@@ -18,7 +18,7 @@ public interface classSelected {
         TimeUnit.SECONDS.sleep(1);
         System.out.println("A fighter is a fighter");
         TimeUnit.SECONDS.sleep(1);
-        System.out.println("bows, swords, axes... ");
+        System.out.println("bows, swords, axes... everything is a weapon");
         TimeUnit.SECONDS.sleep(1);
         System.out.println("hit with power");
         choose.acceptCancel();
@@ -26,21 +26,21 @@ public interface classSelected {
 
     static void artificier() throws InterruptedException {
         TimeUnit.SECONDS.sleep(1);
-        System.out.println();
+        System.out.println("Craft amazing trinkets to help you and others");
         TimeUnit.SECONDS.sleep(1);
-        System.out.println();
+        System.out.println("give a propelled jump with a jetpack");
         TimeUnit.SECONDS.sleep(1);
-        System.out.println();
+        System.out.println("and bonk those heads");
         choose.acceptCancel();
     }
 
     static void sorcerer() throws InterruptedException {
         TimeUnit.SECONDS.sleep(1);
-        System.out.println();
+        System.out.println("Like a wizard but without book");
         TimeUnit.SECONDS.sleep(1);
-        System.out.println();
+        System.out.println("full magic loooong repertoire");
         TimeUnit.SECONDS.sleep(1);
-        System.out.println();
+        System.out.println("starts at lv1 with 4 cantrips, WOW");
         choose.acceptCancel();
     }
 
@@ -76,11 +76,11 @@ public interface classSelected {
 
     static void cleric() throws InterruptedException {
         TimeUnit.SECONDS.sleep(1);
-        System.out.println();
+        System.out.println("Like a sorcerer or a mage");
         TimeUnit.SECONDS.sleep(1);
-        System.out.println();
+        System.out.println("with holy powers: banish the undead");
         TimeUnit.SECONDS.sleep(1);
-        System.out.println();
+        System.out.println("by the word of the lord");
         choose.acceptCancel();
     }
 
