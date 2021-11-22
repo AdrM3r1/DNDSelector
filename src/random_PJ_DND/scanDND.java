@@ -5,61 +5,51 @@ import java.util.Scanner;
 
 public class scanDND {
 
-
     public static void scannerDND() throws InterruptedException {
         System.out.println("Select class with numbers from 1 to 9, 0 for Random");
-        Scanner bepis = new Scanner(System.in);
-        int choice = bepis.nextInt();
-        for (int i = 0; i < selector.classes.length; i++) {
-            switch (choice) {
+        Scanner scInt = new Scanner(System.in);
+        while(scInt.hasNextInt()){
+            int typing = scInt.nextInt();
+            switch(typing){
                 case (1) -> {
                     System.out.println("Paladin");
-                    choose.election(choice);
-                    System.exit(0);
-                }
+                    choose.election(typing);
+                 }
                 case (2) -> {
                     System.out.println("Artificier");
-                    choose.election(choice);
-                    System.exit(0);
-                }
+                    choose.election(typing);
+                 }
                 case (3) -> {
                     System.out.println("Sorcerer");
-                    choose.election(choice);
-                    System.exit(0);
-                }
+                    choose.election(typing);
+                 }
                 case (4) -> {
                     System.out.println("Barbarian");
-                    choose.election(choice);
-                    System.exit(0);
-                }
+                    choose.election(typing);
+                 }
                 case (5) -> {
                     System.out.println("Bard");
-                    choose.election(choice);
-                    System.exit(0);
-                }
+                    choose.election(typing);
+                 }
                 case (6) -> {
                     System.out.println("Monk");
-                    choose.election(choice);
-                    System.exit(0);
-                }
+                    choose.election(typing);
+                 }
                 case (7) -> {
                     System.out.println("Cleric");
-                    choose.election(choice);
-                    System.exit(0);
-                }
+                    choose.election(typing);
+                 }
                 case (8) -> {
                     System.out.println("Rogue");
-                    choose.election(choice);
-                    System.exit(0);
-                }
+                    choose.election(typing);
+                 }
                 case (9) -> {
                     System.out.println("Fighter");
-                    choose.election(choice);
-                    System.exit(0);
-                }
+                    choose.election(typing);
+                 }
                 case (0) -> {
                     random();
-                    choose.election(choice);
+                    choose.election(typing);
                     System.exit(0);
                 }
             }
