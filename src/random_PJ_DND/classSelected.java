@@ -94,4 +94,35 @@ public interface classSelected {
         choose.acceptCancel();
     }
 
+    static void wizard() throws InterruptedException {
+        TimeUnit.SECONDS.sleep(1);
+        System.out.println("Magic spells with good power");
+        TimeUnit.SECONDS.sleep(1);
+        System.out.println("Carry a book for them lose it and its gone");
+        TimeUnit.SECONDS.sleep(1);
+        System.out.println("The Min/Max of magic classes");
+        choose.acceptCancel();
+    }
+
+    static void druid() throws InterruptedException {
+        TimeUnit.SECONDS.sleep(1);
+        System.out.println("The good guys of nature");
+        TimeUnit.SECONDS.sleep(1);
+        System.out.println("knowledge of the nature power");
+        TimeUnit.SECONDS.sleep(1);
+        System.out.println("only nature can damage them, so no metal");
+        choose.acceptCancel();
+    }
+    static void ranger() throws InterruptedException {
+        TimeUnit.SECONDS.sleep(1);
+        System.out.println("bow man");
+        TimeUnit.SECONDS.sleep(1);
+        System.out.println("Pretty stupid to choose this");
+        TimeUnit.SECONDS.sleep(1);
+        System.out.println("Choose a fighter instead");
+        TimeUnit.SECONDS.sleep(1);
+        System.out.println("are you sure you want this?");
+        choose.acceptCancel();
+    }
+
 }

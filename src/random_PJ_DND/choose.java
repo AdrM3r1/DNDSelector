@@ -1,10 +1,11 @@
 package random_PJ_DND;
 
+import java.io.IOException;
+import java.net.URISyntaxException;
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
 public class choose {
-
     public static void election(int choice) throws InterruptedException {
         switch (choice) {
             case (1) -> classSelected.paladin();
@@ -16,6 +17,9 @@ public class choose {
             case (7) -> classSelected.cleric();
             case (8) -> classSelected.rogue();
             case (9) -> classSelected.fighter();
+            case (10) -> classSelected.wizard();
+            case (11) -> classSelected.druid();
+            case (12) -> classSelected.ranger();
         }
     }
 
@@ -24,17 +28,18 @@ public class choose {
         System.out.println("It's what you want?, type yes or no to continue ");
         Scanner sc = new Scanner(System.in);
         boolean nope = sc.hasNext("no");
-        if (nope) {
-            TimeUnit.MILLISECONDS.sleep(1);
-            System.out.println(" ");
-            System.out.println("Rebooting the program");
-            System.out.println(" ");
-            TimeUnit.MILLISECONDS.sleep(1500);
-            selector.lister();
-            scanDND.scannerDND();
-        } else {
-            System.out.println("let's continue");
+            if (nope) {
+                TimeUnit.MILLISECONDS.sleep(1);
+                System.out.println(" ");
+                System.out.println("Rebooting the program");
+                System.out.println(" ");
+                TimeUnit.MILLISECONDS.sleep(1500);
+                selector.lister();
+                scanDND.scannerDND();
+            } else {
+                System.out.println("let's continue");
+            }   races.scanRace();
         }
-    }
+
 
 }

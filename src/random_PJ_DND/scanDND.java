@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class scanDND {
 
     public static void scannerDND() throws InterruptedException {
-        System.out.println("Select class with numbers from 1 to 9, 0 for Random");
+        System.out.println("Select class with numbers from 1 to "+ selector.classes.length + ", 0 for Random");
         Scanner scInt = new Scanner(System.in);
         while(scInt.hasNextInt()){
             int typing = scInt.nextInt();
@@ -46,20 +46,32 @@ public class scanDND {
                 case (9) -> {
                     System.out.println("Fighter");
                     choose.election(typing);
-                 }
+                }
+                case (10) -> {
+                    System.out.println("Wizard");
+                    choose.election(typing);
+                }
+                case (11) -> {
+                    System.out.println("Druid");
+                    choose.election(typing);
+                }
+                case (12) -> {
+                    System.out.println("Ranger");
+                    choose.election(typing);
+                }
                 case (0) -> {
                     random();
-                    choose.election(typing);
-                    System.exit(0);
-                }
+                 }
             }
         }
     }
 
-    public static void random() {
+    public static void random() throws InterruptedException {
         Random random = new Random();
         int index = random.nextInt(selector.classes.length);
         System.out.println(selector.classes[index]);
+        System.out.println("your random class is " + selector.classes[index]);
+        choose.election(index +1);
     }
 
 }
