@@ -7,61 +7,65 @@ import java.util.Scanner;
 public class races {
     // vars
 
-    public static final String[] commonRaces = {"Dragonborn", "Dwarf", "Elf", "Gnome", "Half-Elf", "Halfling", "Half-Orc", "Human", "Tiefling"};
-    public static final List<String> commonRacesList = Arrays.asList(commonRaces);
+    public static final String[] commonRaces = {"Dragonborn", "Dwarf", "Elf", "Gnome", "Half-Elf", "Halfling", "Half-Orc", "Human",
+            "Tiefling"};
 
-    public static final String[] monstrousRace = {"Bugbear", "Centaur", "Goblin", "Grung", "Hobgoblin", "Kobold", "Lizardfolk", "Minotaur", "Orc", "Yuan-Ti Pureblood"};
-    public static final List<String> monstrousRaceList = Arrays.asList(monstrousRace);
+    public static final String[] monstrousRace = {"Bugbear", "Centaur", "Goblin", "Grung", "Hobgoblin", "Kobold", "Lizardfolk",
+            "Minotaur", "Orc", "Yuan-Ti Pureblood"};
 
-    public static final String[] exoticRaces = {"Aarakocra", "Aasimar", "Fairy", "Firbolg", "Genasi", "Gith", "Goliath", "Harengon", "Kenku", "Locathah", "Tabaxi", "Tortle", "Triton"};
-    public static final List<String> exoticRacesList = Arrays.asList(exoticRaces);
+    public static final String[] exoticRaces = {"Aarakocra", "Aasimar", "Fairy", "Firbolg", "Genasi", "Gith", "Goliath", "Harengon",
+            "Kenku", "Locathah", "Tabaxi", "Tortle", "Triton"};
 
     public static final String[] eberronRace = {"Changeling", "Kalashtar", "Shifter", "Warforged"};
-    public static final List<String> eberronRaceList = Arrays.asList(eberronRace);
 
-    public static final String[] arcanaRace = {"Autognome", "Dhamphir", "Giff", "Hadozee", "Hexblood", "Fairy", "Owlfolk", "Plasmoid", "Rabbitfolk", "Reborn", "Revenant", "Thri-Kreen"};
-    public static final List<String> arcanaRaceList = Arrays.asList(arcanaRace);
-
+    public static final String[] arcanaRace = {"Autognome", "Dhamphir", "Giff", "Hadozee", "Hexblood", "Fairy", "Owlfolk", "Plasmoid",
+            "Rabbitfolk", "Reborn", "Revenant", "Thri-Kreen"};
 
     ////////////////////////////////////////////////////////////////////////////
 
     public static void scanRace() throws InterruptedException {
         System.out.println("There is 5 tipes os Races for your character");
-        System.out.println("1->Common,2->Monstruous,3->Exotic,4->Eberron, 5->Arcana");
-        //System.out.println("Type 0 or 6 to go to the wikidot url for more info");
+        System.out.println("1->Common,2->Monstrous,3->Exotic,4->Eberron, 5->Arcana");
         Scanner scInt = new Scanner(System.in);
         while (scInt.hasNextInt()) {
-            int number = scInt.nextInt();
-            switch (number) {
+            int selection = scInt.nextInt();
+            switch (selection) {
                 case (1) -> {
                     System.out.println("Common Races");
                     setCommonRacesList();
-                    raceChoose.commonRaceElection(number);
+                    System.out.print("Number selected: ");
+                    raceChoose.commonRaceElection();
                 }
                 case (2) -> {
-                    System.out.println("Monstruous");
+                    System.out.println("Monstrous");
                     setMonstrousRaceList();
-                    raceChoose.monstruousRaceElection(number);
+                    System.out.print("Number selected: ");
+                    raceChoose.monstruousRaceElection();
                 }
                 case (3) -> {
                     System.out.println("Exotic");
                     setExoticRacesList();
-                    raceChoose.exoticRaceElection(number);
+                    System.out.print("Number selected: ");
+                    raceChoose.exoticRaceElection();
                 }
                 case (4) -> {
                     System.out.println("Eberron");
                     setEberronRaceList();
-                    raceChoose.eberronRaceElection(number);
+                    System.out.print("Number selected: ");
+                    raceChoose.eberronRaceElection();
                 }
                 case (5) -> {
                     System.out.println("Arcana");
                     setArcanaRaceList();
-                    raceChoose.arcanaRaceElection(number);
+                    System.out.print("Number selected: ");
+                    raceChoose.arcanaRaceElection();
                 }
             }
         }
     }
 
+    //////////////////////////////////////////////////
+    /// Listing of the arrays
 
     public static void setCommonRacesList() {
         int index = 1;
