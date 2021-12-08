@@ -33,7 +33,7 @@ public class choose {
                 System.out.println(" ");
                 System.out.println("Rebooting the program");
                 System.out.println(" ");
-                TimeUnit.MILLISECONDS.sleep(1500);
+                TimeUnit.MILLISECONDS.sleep(1300);
                 selector.lister();
                 scanDND.scannerDND();
             } else {

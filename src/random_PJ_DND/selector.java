@@ -4,13 +4,13 @@ import java.io.IOException;
 import java.net.URISyntaxException;
 import java.util.Arrays;
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 public class selector {
 
     // vars
     public static final String[] classes = {"Paladin", "Artificer", "Sorcerer", "Barbarian", "Bard", "Monk", "Cleric",
             "Rogue", "Fighter", "Wizard", "Druid", "Ranger"};
-    public static final List<String> classList = Arrays.asList(classes);
 
     //////////////////////////////////////////////////////
     public static void main(String[] args) throws InterruptedException, IOException, URISyntaxException {
@@ -21,16 +21,17 @@ public class selector {
 
     }
 
-    public static void Start() {
+    public static void Start() throws InterruptedException {
         System.out.println("Welcome to the program");
         System.out.println(
                 "There is " + "#=> " + classes.length + " <=#" + " classes of selectable classes");
+        TimeUnit.SECONDS.sleep(2);
         lister();
     }
 
     public static void lister() {
         int index = 1;
-        for (String s : classList) {
+        for (String s : classes) {
             System.out.println(index++ + " " + s);
         }
     }
