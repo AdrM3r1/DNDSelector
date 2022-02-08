@@ -17,7 +17,6 @@ public class selector {
 
         Start();
         scanDND.scannerDND();
-        races.scanRace();
 
     }
 
