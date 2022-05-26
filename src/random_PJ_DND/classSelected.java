@@ -127,6 +127,9 @@ public interface classSelected {
         System.out.println("Magic spells with good power");
         TimeUnit.MILLISECONDS.sleep(900);
 
+        System.out.println("The living meme of low constitution");
+        TimeUnit.MILLISECONDS.sleep(900);
+
         System.out.println("Carry a book for them lose it and its gone");
         TimeUnit.MILLISECONDS.sleep(900);
 
@@ -143,13 +146,13 @@ public interface classSelected {
         System.out.println("knowledge of the nature power");
         TimeUnit.MILLISECONDS.sleep(900);
 
-        System.out.println("only nature can damage them, so no metal");
+        System.out.println("only nature can damage them, so... no metal armor for you");
         choose.acceptCancel();
     }
     static void ranger() throws InterruptedException {
         TimeUnit.MILLISECONDS.sleep(900);
 
-        System.out.println("bow man");
+        System.out.println("a man, or a woman, with a bow ");
         TimeUnit.MILLISECONDS.sleep(900);
 
         System.out.println("Pretty stupid to choose this");
