@@ -18,7 +18,7 @@ public class raceChoose {
             case (6) -> racesSelected.halfOrc();
             case (8) -> racesSelected.human();
             case (9) -> racesSelected.tiefling();
-            case (0)-> races.scanRace();
+            case (0) -> races.scanRace();
             }
         }
     }
