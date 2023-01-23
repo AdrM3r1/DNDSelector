@@ -152,16 +152,13 @@ public interface classSelected {
     static void ranger() throws InterruptedException {
         TimeUnit.MILLISECONDS.sleep(900);
 
-        System.out.println("a man, or a woman, with a bow ");
+        System.out.println("A man, or a woman, with a bow ");
         TimeUnit.MILLISECONDS.sleep(900);
 
-        System.out.println("Pretty stupid to choose this");
+        System.out.println("Can befriend animals too");
         TimeUnit.MILLISECONDS.sleep(900);
 
-        System.out.println("Choose a fighter instead");
-        TimeUnit.MILLISECONDS.sleep(900);
-
-        System.out.println("are you sure you want this?");
+        System.out.println("This class it's a meme in DND");
         choose.acceptCancel();
     }
 
