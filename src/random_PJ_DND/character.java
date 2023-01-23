@@ -6,9 +6,13 @@ public class character {
     String especie;
     String clase;
 
-    public String getClase() {return clase;}
+    public String getClase() {
+        return clase;
+    }
 
-    public void setClase(String clase) {this.clase = clase;}
+    public void setClase(String clase) {
+        this.clase = clase;
+    }
 
     public String getEspecie() {
         return especie;
@@ -26,6 +30,7 @@ public class character {
         this.nombre = nombre;
     }
 
-    
-
+    public String toString() {
+        return nombre + " " + especie + " " + clase;
+    }
 }
